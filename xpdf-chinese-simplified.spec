@@ -2,7 +2,7 @@ Summary:	ISO-2022-CN, EUC-CN and GBK encoding support for xpdf
 Summary(pl):	Wsparcie kodowania ISO-2022-CN, EUC-CN i GBK dla xpdf
 Name:		xpdf-chinese-simplified
 Version:	1.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.foolabs.com/pub/xpdf/%{name}.tar.gz
@@ -67,7 +67,7 @@ else
 	echo 'cidToUnicode	Adobe-GB1	/usr/share/xpdf/Adobe-GB1.cidToUnicode' >> /etc/xpdfrc
  fi
  if ! grep -q 'CMap-chinese-simplified' /etc/xpdfrc; then
-0	echo 'cMapDir		Adobe-GB1	/usr/share/xpdf/CMap-chinese-simplified' >> /etc/xpdfrc
+	echo 'cMapDir		Adobe-GB1	/usr/share/xpdf/CMap-chinese-simplified' >> /etc/xpdfrc
 	echo 'toUnicodeDir			/usr/share/xpdf/CMap-chinese-simplified' >> /etc/xpdfrc
  fi
  if ! grep -q -e '-\*-fangsong ti-medium-r-normal-\*-%s-\*-\*-\*-\*-\*-gb2312\.1980-0' /etc/xpdfrc; then
