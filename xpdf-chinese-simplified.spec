@@ -2,7 +2,7 @@ Summary:	ISO-2022-CN, EUC-CN and GBK encoding support for xpdf
 Summary(pl):	Wsparcie kodowania ISO-2022-CN, EUC-CN i GBK dla xpdf
 Name:		xpdf-chinese-simplified
 Version:	1.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.foolabs.com/pub/xpdf/%{name}.tar.gz
@@ -69,7 +69,7 @@ else
 0	echo 'cMapDir		Adobe-GB1	/usr/share/xpdf/CMap-chinese-simplified' >> /etc/xpdfrc
 	echo 'toUnicodeDir			/usr/share/xpdf/CMap-chinese-simplified' >> /etc/xpdfrc
  fi
- if ! grep -q '-\*-fangsong ti-medium-r-normal-\*-%s-\*-\*-\*-\*-\*-gb2312\.1980-0' /etc/xpdfrc; then
+ if ! grep -q -e '-\*-fangsong ti-medium-r-normal-\*-%s-\*-\*-\*-\*-\*-gb2312\.1980-0' /etc/xpdfrc; then
 	echo 'displayCIDFontX	Adobe-GB1	"-*-fangsong ti-medium-r-normal-*-%s-*-*-*-*-*-gb2312.1980-0" ISO-2022-CN' >> /etc/xpdfrc
  fi
 fi
@@ -81,7 +81,7 @@ grep -v 'EUC-CN\.unicodeMap' /etc/xpdfrc.new > /etc/xpdfrc
 grep -v 'GBK\.unicodeMap' /etc/xpdfrc > /etc/xpdfrc.new
 grep -v 'Adobe-GB1\.cidToUnicode' /etc/xpdfrc.new > /etc/xpdfrc
 grep -v 'CMap-chinese-simplified' /etc/xpdfrc > /etc/xpdfrc.new
-grep -v '-\*-fangsong ti-medium-r-normal-\*-%s-\*-\*-\*-\*-\*-gb2312\.1980-0' /etc/xpdfrc.new > /etc/xpdfrc
+grep -v -e '-\*-fangsong ti-medium-r-normal-\*-%s-\*-\*-\*-\*-\*-gb2312\.1980-0' /etc/xpdfrc.new > /etc/xpdfrc
 rm -f /etc/xpdfrc.new
 
 %files
