@@ -6,7 +6,7 @@ Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	ftp://ftp.foolabs.com/pub/xpdf/%{name}.tar.gz
-# Source0-md5:	030392ef4ad4e75caf899064265f73aa
+# Source0-md5:	7a92500278d4aa8089024d5d7266f4ac
 URL:		http://www.foolabs.com/xpdf/
 Requires(post,preun):	grep
 Requires(post,preun):	xpdf
