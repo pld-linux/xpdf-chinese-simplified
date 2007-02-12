@@ -1,5 +1,5 @@
 Summary:	ISO-2022-CN, EUC-CN and GBK encoding support for xpdf
-Summary(pl.UTF-8):   Wsparcie kodowania ISO-2022-CN, EUC-CN i GBK dla xpdf
+Summary(pl.UTF-8):	Wsparcie kodowania ISO-2022-CN, EUC-CN i GBK dla xpdf
 Name:		xpdf-chinese-simplified
 Version:	1.0
 Release:	6
