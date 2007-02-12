@@ -1,5 +1,5 @@
 Summary:	ISO-2022-CN, EUC-CN and GBK encoding support for xpdf
-Summary(pl):	Wsparcie kodowania ISO-2022-CN, EUC-CN i GBK dla xpdf
+Summary(pl.UTF-8):   Wsparcie kodowania ISO-2022-CN, EUC-CN i GBK dla xpdf
 Name:		xpdf-chinese-simplified
 Version:	1.0
 Release:	6
@@ -22,12 +22,12 @@ specific character sets. (They do not include any fonts.)
 This package provides support files needed to use the Xpdf tools with
 Chinese-simplified PDF files.
 
-%description -l pl
-Pakiety wspieraj±ce jêzyki Xpdf zawieraj± pliki CMap, kodowania oraz
-ró¿ne inne informacje konfiguracyjne niezbêdne b±d¼ przydatne przy
-okre¶lonych zestawach znaków. (Nie zawieraj± ¿adnych fontów).
-Ten pakiet zawiera pliki potrzebne do u¿ywania narzêdzi Xpdf z
-chiñskimi uproszczonymi plikami PDF.
+%description -l pl.UTF-8
+Pakiety wspierajÄ…ce jÄ™zyki Xpdf zawierajÄ… pliki CMap, kodowania oraz
+rÃ³Å¼ne inne informacje konfiguracyjne niezbÄ™dne bÄ…dÅº przydatne przy
+okreÅ›lonych zestawach znakÃ³w. (Nie zawierajÄ… Å¼adnych fontÃ³w).
+Ten pakiet zawiera pliki potrzebne do uÅ¼ywania narzÄ™dzi Xpdf z
+chiÅ„skimi uproszczonymi plikami PDF.
 
 %prep
 %setup -q -n %{name}
