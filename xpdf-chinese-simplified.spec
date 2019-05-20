@@ -1,13 +1,14 @@
 Summary:	ISO-2022-CN, EUC-CN and GBK encoding support for xpdf
 Summary(pl.UTF-8):	Obsługa kodowań ISO-2022-CN, EUC-CN i GBK dla xpdf
 Name:		xpdf-chinese-simplified
-Version:	20110815
+Version:	20170725
 Release:	1
 License:	GPL v2 or GPL v3
 Group:		X11/Applications
-Source0:	ftp://ftp.foolabs.com/pub/xpdf/%{name}-2011-aug-15.tar.gz
-# Source0-md5:	25a74d002991c8cc1c8cd31f902894b6
-URL:		http://www.foolabs.com/xpdf/
+#Source0Download: http://www.xpdfreader.com/download.html
+Source0:	https://xpdfreader-dl.s3.amazonaws.com/%{name}.tar.gz
+# Source0-md5:	6e180df2bec057b284830ef0ba06a1b1
+URL:		http://www.xpdfreader.com/
 Requires(post,preun):	grep
 Requires(post,preun):	xpdf
 Requires(preun):	fileutils
